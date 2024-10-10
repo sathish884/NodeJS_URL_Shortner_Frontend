@@ -11,7 +11,7 @@ function Dashboard() {
         const fetchStats = async () => {
             try {
                 const response = await axios.post(
-                    'http://localhost:3000/api/urls/getUrlStatus',
+                    'https://node-js-url-shortner-backend.vercel.app/api/urls/getUrlStatus',
                     {}, // The request body can be empty or contain other data as needed
                     {
                         headers: {

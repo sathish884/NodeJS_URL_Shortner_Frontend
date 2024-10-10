@@ -12,7 +12,7 @@ function Activated() {
     useEffect(() => {
         const activateAccount = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/api/auth/activate/${token}`);
+                const response = await axios.get(`https://node-js-url-shortner-backend.vercel.app/api/auth/activate/${token}`);
                 console.log(response);
                 setMessage(response.data.message);
                 setTimeout(() => {

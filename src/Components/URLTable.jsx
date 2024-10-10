@@ -9,7 +9,7 @@ function URLTable() {
         const token = JSON.parse(sessionStorage.getItem('token'));
         const fetchURLs = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/api/urls', {
+                const response = await axios.get('https://node-js-url-shortner-backend.vercel.app/api/urls', {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },

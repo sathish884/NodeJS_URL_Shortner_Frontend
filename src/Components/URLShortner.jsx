@@ -12,7 +12,7 @@ function URLShortner() {
 
         try {
             const response = await axios.post(
-                'http://localhost:3000/api/urls/shorten',
+                'https://node-js-url-shortner-backend.vercel.app/api/urls/shorten',
                 { originalURL },
                 {
                     headers: {
@@ -27,7 +27,7 @@ function URLShortner() {
     };
 
     const handleRedirect = () => {
-        window.open(`http://localhost:3000/api/urls/${shortURL}`, '_blank');
+        window.open(`https://node-js-url-shortner-backend.vercel.app/api/urls/${shortURL}`, '_blank');
     };
 
     return (

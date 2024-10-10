@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000/api'; // Replace with your server URL
+const API_URL = 'https://node-js-url-shortner-backend.vercel.app/api'; // Replace with your server URL
 
 export const apiClient = axios.create({
     baseURL: API_URL,
